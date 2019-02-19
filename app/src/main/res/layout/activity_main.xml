@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/IVDisplay"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tech"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Quizathon 3.0"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/add_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:background="@drawable/buttonstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:typeface="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:text=" Techfiesta is annual science and technology fest of Ramgarh Engineering College.Conceived in 2016 as a platform for engineering students to showcase their skills and knowledge in fun, practical and innovative ways.previous edition of techfiesta saw participation from different colleges in jharkhand."
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Corner"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/bank_card"
+                    android:clickable="true"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/rank"
+                            android:padding="10dp"/>
+                        <TextView
+
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Ranking"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ideas_card"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:src="@drawable/documents"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Rules"
+                            />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:typeface="serif"
+
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+
+                <ImageView
+                    android:id="@+id/viewImage1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="15dp"
+                    android:src="@drawable/photo" />
+
+
+
+                <ImageView
+                    android:id="@+id/viewImage2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="15dp"
+                    android:src="@drawable/photo" />
+
+                <ImageView
+                    android:id="@+id/viewImage3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="15dp"
+                    android:src="@drawable/photo" />
+
+                <ImageView
+                    android:id="@+id/viewImage4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="15dp"
+                    android:src="@drawable/photo" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quizathon Co-Ordinator"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/bank_card"
+                    android:clickable="true"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/photo"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"/>
+
+                        <TextView
+
+                            android:id="@+id/textView10"
+                            android:textSize="16sp"
+                            android:typeface="serif"
+                            android:textStyle="bold"
+                            android:textColor="#4a4a4a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Techfiesta"/>
+
+                        <TextView
+                            android:textStyle="normal"
+                            android:typeface="serif"
+                            android:textColor="#9b9b9b"
+                            android:layout_width="193dp"
+                            android:text="All the pictures of the techfiesta are available ."
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignLeft="@id/textView10"
+                            android:layout_alignStart="@id/textView10"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/bank_card"
+                    android:clickable="true"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/photo"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"/>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:textSize="16sp"
+                            android:typeface="serif"
+                            android:textStyle="bold"
+                            android:textColor="#4a4a4a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Techfiesta"/>
+
+                        <TextView
+                            android:textStyle="normal"
+                            android:typeface="serif"
+                            android:textColor="#9b9b9b"
+                            android:layout_width="193dp"
+                            android:text="All the pictures of the techfiesta are available ."
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignLeft="@id/textView11"
+                            android:layout_alignStart="@id/textView11"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/bank_card"
+                    android:clickable="true"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/photo"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"/>
+
+                        <TextView
+
+                            android:id="@+id/textView12"
+                            android:textSize="16sp"
+                            android:typeface="serif"
+                            android:textStyle="bold"
+                            android:textColor="#4a4a4a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Techfiesta"/>
+
+                        <TextView
+                            android:textStyle="normal"
+                            android:typeface="serif"
+                            android:textColor="#9b9b9b"
+                            android:layout_width="193dp"
+                            android:text="All the pictures of the techfiesta are available ."
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignLeft="@id/textView12"
+                            android:layout_alignStart="@id/textView12"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REC Student Portal Office"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/bank_card"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/imageAdress"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/map"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+
+                        android:layout_marginRight="5dp"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="110dp"
+                        android:typeface="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text=" Room No. 324\nAcademic Building
+                        Ramgarh Engg. College \n Murubanda PO: Barkipona\n PS: Rajrappa Project,\nDist.: Ramgarh-825101"
+                        android:layout_gravity="center" />
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:layout_margin="10dp"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/facebookBlue"
+                android:padding="10dp"
+                android:src="@drawable/img_facebook" />
+
+            <ImageView
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/twitterBlue"
+                android:padding="10dp"
+                android:src="@drawable/img_twitter" />
+
+            <ImageView
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingRight="15dp"
+                android:background="@color/googleRed"
+                android:padding="10dp"
+                android:src="@drawable/bb" />
+
+            <ImageView
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/webBackground"
+                android:padding="10dp"
+                android:src="@drawable/web" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
